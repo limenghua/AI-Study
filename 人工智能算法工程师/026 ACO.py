@@ -101,7 +101,7 @@ class TSP():
         self.width = width
         self.height = height
         self.n = n
-        self.canvas = tkinter.Canvas(root, width=500, height=500,bg="#EBEBEB",xscrollincrement=1,yscrollincrement=1)
+        self.canvas = tkinter.Canvas(root, width=width, height=height,bg="#EBEBEB",xscrollincrement=1,yscrollincrement=1)
         self.canvas.pack(expand=tkinter.YES, fill=tkinter.BOTH)
         self.title("TSP 蚁群算法(n:初始化 e:开始搜索 s:停止搜索 q:退出程序)")
         self.__r = 5
@@ -225,6 +225,6 @@ class TSP():
 
     
 if __name__ == '__main__':
-    tsp = TSP(tkinter.Tk(), 500, 500)
+    tsp = TSP(tkinter.Tk(), 600, 600)
     tsp.mainloop()
                     
